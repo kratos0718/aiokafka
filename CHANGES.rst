@@ -31,6 +31,8 @@ New features:
 
 Bugfixes:
 
+* Fix consumer never leaving the group on `max_poll_interval_ms` after a
+  `getone()`/`getmany()` call raised or was cancelled (pr #1190 by @kratos0718)
 * Fix type annotation for `AIOKafkaAdminClient` (issue #1148)
 * Return back and deprecate `api_version` parameter in client classes
   (issue #1147)
